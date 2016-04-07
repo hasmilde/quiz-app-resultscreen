@@ -22,9 +22,9 @@ angular.module('myApp.view1', ['ngRoute'])
         [28, 48, 40, 19, 86, 27, 90]
         ];
     
-    $scope.pielabels = ["January", "February", "March"];
-    $scope.pieseries = ['Scores'];
-    $scope.piedata = [
+    $scope.doughnutLabels = ["January", "February", "March"];
+    $scope.doughnutSeries = ['Scores'];
+    $scope.doughnutData = [
         65, 59, 80
     
         ];
