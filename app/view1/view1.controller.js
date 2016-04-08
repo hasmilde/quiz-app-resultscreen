@@ -30,6 +30,9 @@
                             setInterval(function () {
                                 console.log('Polling area chart data every 2 seconds');
                                 var data = view1Service.getAreaChartData();
+                                //colors werkt nog niet:(
+                                data.deelnames.color = "#18ed5ed";
+                                data.scores.color= "#1992c5";
                                 series[0].setData(data.deelnames, true);
                                 series[1].setData(data.scores, true);
                             }, 2000);
@@ -86,7 +89,7 @@
                     events: {
                         load: function () {
                             var series = this.series;
-                            var colors = Highcharts.getOptions().colors;
+                            var colors = ["#1992c5", "#556367", "#18559e", "#57a2bc", "#a7b65b", "#134154", "#18ed5ed"];
                             setInterval(function () {
                                 console.log('Polling donut chart data every 4 seconds');
                                 var data = view1Service.getDonutChartData();
