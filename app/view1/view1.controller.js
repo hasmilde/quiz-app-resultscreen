@@ -31,8 +31,8 @@
                                 console.log('Polling area chart data every 2 seconds');
                                 var data = view1Service.getAreaChartData();
                                 //colors werkt nog niet:(
-                                data.deelnames.color = "#18ed5ed";
-                                data.scores.color= "#1992c5";
+                                // data.deelnames.color = "#18ed5ed";
+                                // data.scores.color= "#1992c5";
                                 series[0].setData(data.deelnames, true);
                                 series[1].setData(data.scores, true);
                             }, 2000);
